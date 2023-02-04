@@ -31,15 +31,17 @@
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
 	    		<div class="col-lg-12 d-block">
-		    		<div class="row d-flex">
+		    		<div class="row d-flex justify-content-end">
 					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
-						    <p class="mb-0 register-link"><a href="pages/login.html" class="mr-3">Sign Up</a><a href="pages/registrar.html">Sign In</a></p>
-					    </div>
+                <p class="mb-0 register-link"><a href="login.html" class="mr-3">Iniciar sesión</a><a href="login.html">Registrarse</a></p>
+
+              </div>
 				    </div>
 			    </div>
 		    </div>
 		  </div>
     </div>
+
 	<!--Aqui inicia el menu-->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
@@ -66,6 +68,7 @@
 	      </div>
 	    </div>
 	  </nav>
+  
 	  <!--Aqui termina inicia el menu-->
         <div id="espacio_menu"></div>
     
@@ -87,19 +90,20 @@
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <form action="login_usuario_be.php" method="post" class="formulario__login">
+                    <form  class="formulario__login">
                         <h2>Iniciar Sesión</h2>
                         <input type="email" placeholder="Correo electronico" name="correo">
                         <input type="password" placeholder="Contraseña" name="contrasena">
                         <div class="valid-feedback"></div>
-                        <button>Ingresar</button>
+                        <a href="bienvenido.html" class="btn btn-primary btn-lg " tabindex="-1" role="button" aria-disabled="true">Iniciar sesión</a>
+
                         <br>
                         <br>
                         
                     </form>
                         
                     <!--Register-->
-                    <form action="registro_usuario_be.php" method="post" class="formulario__register">
+                    <form href="pagos.html" class="formulario__register">
                         <h2>Regístrarse</h2>
                         <input  type="text" placeholder="Nombre" name="nombre" required>
                         <input  type="text" placeholder="Apellido" name="apellido" required>
@@ -107,7 +111,7 @@
                         <input  type="email" placeholder="Email" name="email" required>
                         <input  type="password" placeholder="Contraseña" name="contrasena" required>
                         </input>
-                        <button>Regístrarse</button>
+                        <a href="pagos.html" class="btn btn-primary btn-lg " tabindex="-1" role="button" aria-disabled="true">Registrar</a>
                     </form>
                 </div>
             </div>
@@ -119,7 +123,7 @@
    <!--Espacio entre el login y el footer-->
 
     	<!--Inicio footer-->
-    <footer class="ftco-footer ftco-section img" style="background-image: url(images/footer-bg.jpg);">
+    <footer class="ftco-footer ftco-section img" id="imgpie">
     	<div class="overlay"></div>
       <div class="container-fluid px-md-5">
         <div class="row mb-5">
