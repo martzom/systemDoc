@@ -9623,3 +9623,17 @@ textarea.form-control {
    #noticia6{
     background-image: url('/images/Noticia6.png');
    }
+   #cardwit{
+    width: 18rem;
+   }
+
+   #hospital{
+    width: 18rem;
+   }
+
+   #cardh{
+    background: #222;
+    border: 1px solid #dd2476;
+    color: rgba(250, 250, 250, 0.8);
+    margin-bottom: 2rem;
+  }
