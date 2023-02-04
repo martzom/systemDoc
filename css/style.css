@@ -9587,12 +9587,6 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
-<<<<<<< HEAD
-    #ImagenServicio{
-      margin: 100px 0px 0px -61px;
-      width: 711px;
-    }
-=======
    #imagenFondo{
     background-image: url('/images/bg_3.jpg');
    }
@@ -9629,21 +9623,3 @@ textarea.form-control {
    #noticia6{
     background-image: url('/images/Noticia6.png');
    }
-<<<<<<< HEAD
->>>>>>> 7ef1952d4a9073ab1c76ff98253127d7243431c1
-=======
-   #cardwit{
-    width: 18rem;
-   }
-
-   #hospital{
-    width: 18rem;
-   }
-
-   #cardh{
-    background: #222;
-    border: 1px solid #dd2476;
-    color: rgba(250, 250, 250, 0.8);
-    margin-bottom: 2rem;
-  }
->>>>>>> 815cc898e5e22e7feaf1326c60110c5d78c20355
