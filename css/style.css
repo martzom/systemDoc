@@ -9587,7 +9587,46 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
+<<<<<<< HEAD
     #ImagenServicio{
       margin: 100px 0px 0px -61px;
       width: 711px;
     }
+=======
+   #imagenFondo{
+    background-image: url('/images/bg_3.jpg');
+   }
+   #imagenEspecialidades{
+    background-image: url('/images/dept-1.jpg');
+   }
+   #imgTestimonio{
+    background-image: url('/images/bg_3.jpg')
+   }
+   #imgTestimonio2{
+    background-image: url('/images/bg_2.jpg')
+   }
+   #imgTestimonio3{
+    background-image: url('/images/person_2.jpg')
+   }
+   #imgpie{
+    background-image: url('/images/footer-bg.jpg');
+   }
+   #noticia1{
+    background-image: url('/images/Noticia1.png');
+   }
+   #noticia2{
+    background-image: url('/images/Noticia2.png');
+   }
+   #noticia3{
+    background-image: url('/images/Noticia3.png');
+   }
+   #noticia4{
+    background-image: url('/images/Noticia4.png');
+   }
+   #noticia5{
+    background-image: url('/images/Noticia5.png');
+   }
+   #noticia6{
+    background-image: url('/images/Noticia6.png');
+   }
+>>>>>>> 7ef1952d4a9073ab1c76ff98253127d7243431c1
