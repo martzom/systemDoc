@@ -61,28 +61,22 @@
                     <li class="nav-item cta mr-md-2">
                         <div class="input-group">
                             <div class="input-group">
-                                
-                  <FORM  method=GET action="http://www.google.es/search">
-                    <fieldset>
-                        <input type=hidden name=ie value=UTF-8 />
-                        <input type=hidden name=oe value=UTF-8 />
-                                        
-                        <INPUT TYPE=text id="s" name="q" value="" size="50" />
-                        <font size=-1>
-                                        
-                        <input type=hidden name=domains value="http://www.uterra.com" />
-                        <INPUT  class="btn btn-primary" type=submit  id="x" name=btnG VALUE="Buscar" />
-                        </font>
-                    </fieldset>
-                    </FORM>
-                
+                                <input class="form-control me-2" type="text" id="buscadorin" placeholder="Buscar">
+                  <button class="btn btn-primary" id="btnbuscador" onclick="buscador()" type="button">Buscar</button>
                             </div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <br><br><br> <br><br>
+    <section class="ftco-section">
+        <div>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item" aria-current="page">Acerca</li>
+          </ol>
+      </div>
+    </section>
     <div class="aboutus-section">
         <div class="container">
             <div class="row">
@@ -105,7 +99,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="aboutus-banner">
-                        <img src="http://themeinnovation.com/demo2/html/build-up/img/home1/about1.jpg" alt="">
+                        <img src="images/utn.jpg" id="utn" alt="">
                     </div>
                 </div>
                 <div class="col-md-5 col-sm-6 col-xs-12">
@@ -141,8 +135,7 @@
                                 </div>
                                 <div class="feature-content">
                                     <h4>Valores</h4>
-                                    <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                                        vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+                                    <p>Priorizar la información real y de forma tranparente a nuestros usuarios, informando a nuestra comunidad en una caso de emergencia.</p>
                                 </div>
                             </div>
                         </div>
@@ -225,6 +218,7 @@
     <script src="js/aos.js"></script>
     <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/scrollax.min.js"></script>
+    <script src="js/buscador.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>

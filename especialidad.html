@@ -60,69 +60,67 @@
                     <li class="nav-item cta mr-md-2">
                         <div class="input-group">
                             <div class="input-group">
-                               
-                  <FORM  method=GET action="http://www.google.es/search">
-                    <fieldset>
-                        <input type=hidden name=ie value=UTF-8 />
-                        <input type=hidden name=oe value=UTF-8 />
-                                        
-                        <INPUT TYPE=text id="s" name="q" value="" size="50" />
-                        <font size=-1>
-                                        
-                        <input type=hidden name=domains value="http://www.uterra.com" />
-                        <INPUT  class="btn btn-primary" type=submit  id="x" name=btnG VALUE="Buscar" />
-                        </font>
-                    </fieldset>
-                    </FORM>
-                
+                                <input class="form-control me-2" type="text" id="buscadorin" placeholder="Buscar">
+					<button class="btn btn-primary" id="btnbuscador" onclick="buscador()" type="button">Buscar</button>
                             </div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div>
+    
+ 
+    </div>
     <!--Aqui termina inicia el menu-->
     <br><br><br>
     <br>
+    <div>
+      
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="bienvenido.html">Inicio</a></li>
+          <li class="breadcrumb-item" aria-current="page">Especialidades</li>
+        </ol>
+ 
+    </div>
     <h1 class="display-2 text-center">Busca especialidades</h1>
 
 
     <div class="container mx-auto mt-4">
+        
         <div class="row">
             <div class="col-md-4">
                 <div class="card" id="cardwit">
-                    <img src="images/laperla.jpg" class="card-img-top hospital" alt="...">
+                    <img src="images/Otorrinolaringología.jpg" class="card-img-top hospital" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Hospital General La Perla</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Nezahualcóyotl</h6>
-                        <p class="card-text">Horas: 
-                            Abierto las 24 horas
-                            Sala de emergencias: Abierto las 24 horas</p>
-                        <a href="https://goo.gl/maps/y3LuD2AtuPDoyLvM6" class="btn mr-2"><i class="fas fa-link"></i>Hubicación</a>
+                        <h5 class="card-title">Otorrinolaringología</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Especialidad</h6>
+                        <p class="card-text">Padecimientos de oídos, nariz y garganta y/o que requieran cirugía de cabeza y cuello.</p>
+                        <a href="hospitales.html" class="btn mr-2"><i class="fas fa-link"></i>Ver hospitales</a>
                         
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="cardh" id="cardwit">
-                    <img src="images/hregional.jpg" class="card-img-top hosptial" alt="...">
+                    <img src="images/Estomatología.jpg.crdownload" class="card-img-top hosptial" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Hospital Regional</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Nezahualcóyotl</h6>
-                        <p class="card-text">Dirección: S. Juan de Aragón Gral Vicente Villada, 57710 Nezahualcóyotl, Méx.</p>
-                        <a href="https://goo.gl/maps/WmnJfPPjmhoXiDY5A" class="btn  mr-2"><i class="fas fa-link"></i> Hubicación</a>
+                        <h5 class="card-title">Estomatología</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Especialidad</h6>
+                        <p class="card-text">Cirugía bucal y maxilofacial, ortodoncia preventiva, interseptiva y correctiva.</p>
+                        <a href="hospitales.html" class="btn  mr-2"><i class="fas fa-link"></i>Ver hospitales</a>
                         
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="cardh" id="cardwit">
-                    <img src="images/olab.jpg" class="card-img-top" alt="...">
+                    <img src="images/Neumología.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Olab Diagnósticos Médicos</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Nezahualcóyotl</h6>
-                        <p class="card-text">Realízate estudios de laboratorio a los mejores precios.</p>
-                        <a href="https://goo.gl/maps/6gLfNfSVuDqPfSPX8" class="btn mr-2"><i class="fas fa-link"></i>  Hubicación</a>
+                        <h5 class="card-title">Neumología</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Especialidad</h6>
+                        <p class="card-text">Se diagnostica y trata los padecimientos del aparato respiratorio.</p>
+                        <a href="hospitales.html" class="btn mr-2"><i class="fas fa-link"></i>Ver hospitales</a>
                         
                     </div>
                 </div>
@@ -132,110 +130,78 @@
                 <div class="card" id="cardwit">
                     <img src="images/unidad.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Unidad Medica Jesus Medico</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Nezahualcóyotl</h6>
-                        <p class="card-text">Dirección: Av. Floresta 176, Reforma, 57840 Nezahualcóyotl, Méx.</p>
-                        <a href="#" class="btn mr-2"><i class="fas fa-link"></i>  Hubicación</a>
+                        <h5 class="card-title">Ortopedia</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Especialidad</h6>
+                        <p class="card-text">Pacientes con padecimientos músculo esquelético.</p>
+                        <a href="hospitales.html" class="btn mr-2"><i class="fas fa-link"></i>Ver hospitales</a>
                         
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card" id="cardwit">
-                    <img src="images/unido.jpeg" class="card-img-top" alt="...">
+                    <img src="images/Ortopedia.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">HOSPITAL MEXICO UNIDO</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Nezahualcóyotl</h6>
-                        <p class="card-text">Dirección: Av. Vicente Villada 823, Benito Juárez, 57000 Nezahualcóyotl, Méx.</p>
-                        <a href="https://goo.gl/maps/KtKbD4P4kPCo1qfW9" class="btn mr-2"><i class="fas fa-link"></i>  Hubicación</a>
+                        <h5 class="card-title">Urgencias</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Especialidad</h6>
+                        <p class="card-text">Situación que no amenaza de forma inminente la vida del enfermo.</p>
+                        <a href="hospitales.html" class="btn mr-2"><i class="fas fa-link"></i>Ver hospitales</a>
                         
                     </div>
                 </div>
             </div>
             
         </div>
-    </div>
+    </div><br><br>
 
 
 
 
     <!--Inicio footer-->
     <footer class="ftco-footer ftco-section img" id="imgpie">
-        <div class="overlay"></div>
-        <div class="container-fluid px-md-5">
-            <div class="row mb-5">
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Síguenos</h2>
-                        <p>Queremos conocer tu opinión, síguenos en nuestras redes sociales!</p>
-                        <ul class="ftco-footer-social list-unstyled mt-5">
-                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4 ml-md-4">
-                        <h2 class="ftco-heading-2">Departamentos</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Neurología</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Oftalmología</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Resonancia Magnética</a>
-                            </li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Quirúrgico</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Cardiología</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Odontología</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4 ml-md-4">
-                        <h2 class="ftco-heading-2">Links</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Inicio</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Acerca</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Departamentos</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Medicos</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Blog</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Precios</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contacto</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Servicios</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Servicio de Emergencia</a>
-                            </li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Medicos Calificados</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Consulta externa</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Servicio 24 Horas</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Dudas</h2>
-                        <div class="block-23 mb-3">
-                            <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">C. Escondida 63, La
-                                        Perla, 57830 Nezahualcóyotl, Méx.</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">55 5716
-                                            7190</span></a></li>
-                                <li><a href="#"><span class="icon icon-envelope pr-4"></span><span
-                                            class="text">laperla@gmail.com</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    	<div class="overlay"></div>
+      <div class="container-fluid px-md-5">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">SystemDoc</h2>
+              <p>Facilitando el manejo y consulta de
+                información general de hospitales de Nezahualcóyot.</p>
+              <ul class="ftco-footer-social list-unstyled mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
             </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                </div>
+          </div>
+          
+          
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Acerca</h2>
+              <ul class="list-unstyled">
+                <li><a href="acerca.html"><span class="icon-long-arrow-right mr-2"></span>Conocenos</a></li>                
+              </ul>
             </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Envianos tus dudas y sugerencias</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Colonia reforma #172, 57840 Nezahualcoyotl</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">554200039</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope pr-4"></span><span class="text">dudas@systemDoc.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+          </div>
+        </div>
+      </div>
     </footer>
     <!--Fin de footer-->
 
@@ -259,6 +225,8 @@
     <script src="js/aos.js"></script>
     <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/scrollax.min.js"></script>
+    <script src="js/buscadorUser.js"></script>
+    
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>

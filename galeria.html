@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
         
-        <link rel="shortcut icon" href="images/icono.png">
+        
         <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
         <link rel="stylesheet" href="css/animate.css">
         
@@ -58,21 +58,8 @@
 	          <li class="nav-item cta mr-md-2">
               <div class="input-group">
                 <div class="input-group">
-                  
-                  <FORM  method=GET action="http://www.google.es/search">
-                    <fieldset>
-                        <input type=hidden name=ie value=UTF-8 />
-                        <input type=hidden name=oe value=UTF-8 />
-                                        
-                        <INPUT TYPE=text id="s" name="q" value="" size="50" />
-                        <font size=-1>
-                                        
-                        <input type=hidden name=domains value="http://www.uterra.com" />
-                        <INPUT  class="btn btn-primary" type=submit  id="x" name=btnG VALUE="Buscar" />
-                        </font>
-                    </fieldset>
-                    </FORM>
-                
+                  <input class="form-control me-2" type="text" id="buscadorin" placeholder="Buscar">
+                  <button class="btn btn-primary" id="btnbuscador" onclick="buscador()" type="button">Buscar</button>
               </div>
             </li>
 	        </ul>
@@ -80,8 +67,16 @@
 	    </div>
 	  </nav>
 	  <!--Aqui termina inicia el menu-->
-        <div id="espacio"></div>
+
      <!--Aqui inicia la galeria-->
+     <section class="ftco-section">
+      <div>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item" aria-current="page">Fotos</li>
+        </ol>
+    </div>
+  </section>
       <div class="ful-img" id="fulImgBox">
         <img src="imgs/1.jpg" id="fulImg" alt="">
         <span onclick="closeImg()">X</span>
@@ -99,6 +94,7 @@
         <img src=" images/7.jpg" onclick="openFulImg(this.src)" alt="">
         <img src=" images/8.jpg" onclick="openFulImg(this.src)" alt="">
     </div>
+  
     <!--Aqui termina la galeria-->
 
     <!--Inicio footer-->
@@ -168,7 +164,7 @@
       <script src="js/scrollax.min.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
       <script src="js/google-map.js"></script>
-      
+      <script src="js/buscador.js"></script>
       <script src="js/main.js"></script>
       <script src="js/galery.js"></script>
 </body>

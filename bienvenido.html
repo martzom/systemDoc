@@ -56,21 +56,8 @@
 	          <li class="nav-item cta mr-md-2">
               <div class="input-group">
                 <div class="input-group">
-                 
-					<FORM  method=GET action="http://www.google.es/search">
-						<fieldset>
-							<input type=hidden name=ie value=UTF-8 />
-							<input type=hidden name=oe value=UTF-8 />
-											
-							<INPUT TYPE=text id="s" name="q" value="" size="50" />
-							<font size=-1>
-											
-							<input type=hidden name=domains value="http://www.uterra.com" />
-							<INPUT  class="btn btn-primary" type=submit  id="x" name=btnG VALUE="Buscar" />
-							</font>
-						</fieldset>
-						</FORM>
-					
+					<input class="form-control me-2" type="text" id="buscadorin" placeholder="Buscar">
+					<button class="btn btn-primary" id="btnbuscador" onclick="buscador()" type="button">Buscar</button>
               </div>
             </li>
 	        </ul>
@@ -79,7 +66,8 @@
 	  </nav>
 	  <!--Aqui termina inicia el menu-->
 	  <section class="hero-wrap js-fullheight" id="imagenFondo" data-section="home" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
+		
+		<div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-6 pt-5 ftco-animate">
@@ -87,114 +75,13 @@
           		<span class="subheading">Gracias por tu confianza</span>
 	            <h1 class="mb-4 ">Bienvenido<br>Martin</h1>
 	            <p class="mb-6 text-dark">Cosulta la información y servicio de hospitales de tu zona.</p>
-	            <p><a href="hopitales.html" class="btn btn-primary py-3 px-4">Hospitales</a></p>
+	            <p><a href="hospitales.html" class="btn btn-primary py-3 px-4">Hospitales</a></p>
             </div>
           </div>
         </div>
       </div>
     </section>
-		<section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-2 bg-light">
-      <div class="container">
-  <div class="row d-flex">
-      <div class="col-md-7 py-5">
-          <div class="py-lg-5">
-              <div class="row justify-content-center pb-5">
-                <div class="col-md-12 heading-section ftco-animate"><br>
-                  <h2 class="mb-3">Nuestros Servicios</h2>
-                </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-6 d-flex align-self-stretch ftco-animate">
-                  <div class="media block-6 services d-flex">
-                    <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-ambulance"></span></div>
-                    <div class="media-body pl-md-4">
-                      <h3 class="heading mb-3">Servicios de Emergencia </h3>
-                      <p>Ambulancias Seguras y Paramédicos Certificados, Traslados con Oxígeno, Traslado de pacientes en Ambulancia.</p>
-                    </div>
-                  </div>      
-                </div>
-                <div class="col-md-6 d-flex align-self-stretch ftco-animate">
-                  <div class="media block-6 services d-flex">
-                    <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-doctor"></span></div>
-                    <div class="media-body pl-md-4">
-                      <h3 class="heading mb-3">Medicos Calificados</h3>
-                      <p>Nuestros médicos están altamente calificados y provienen de los principales centros académicos de todo el mundo.</p>
-                    </div>
-                  </div>      
-                </div>
-                <div class="col-md-6 d-flex align-self-stretch ftco-animate">
-                  <div class="media block-6 services d-flex">
-                    <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-stethoscope"></span></div>
-                    <div class="media-body pl-md-4">
-                      <h3 class="heading mb-3">Consulta externa</h3>
-                      <p>Atención medica a los pacientes con padecimientos en general para su evaluación.</p>
-                    </div>
-                  </div>      
-                </div>
-                <div class="col-md-6 d-flex align-self-stretch ftco-animate">
-                  <div class="media block-6 services d-flex">
-                    <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-24-hours"></span></div>
-                    <div class="media-body pl-md-4">
-                      <h3 class="heading mb-3">Servicio 24 horas</h3>
-                      <p>No dudes en contactarte con SystemDoc, todos nuestros servicios los encontrarás 24 horas al días, 7 días al año.</p>
-                    </div>
-                  </div>      
-                </div>
-              </div>
-            </div>
-        </div>
-		      <div class="col-md-5 d-flex">
-	        	<div class="appointment-wrap bg-white p-4 p-md-5 d-flex align-items-center">
-		        	<form action="#" class="appointment-form ftco-animate">
-		        		<h3>Inicia tu membresía de systemDoc</h3>
-		    				<div class="">
-			    				<div class="form-group">
-			    					<input type="text" class="form-control" placeholder="Nombre">
-			    				</div>
-			    				<div class="form-group">
-			    					<input type="text" class="form-control" placeholder="Apellido">
-			    				</div>
-		    				</div>
-		    				<div class="">
-		    					<div class="form-group">
-			    					<div class="form-field">
-	          					<div class="select-wrap">
-	                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                      
-	                    </div>
-			              </div>
-			    				</div>
-		    					<div class="form-group">
-			    					<input type="text" class="form-control" placeholder="Numero telefonico">
-			    				</div>
-		    				</div>
-		    				<div class="">
-			    				<div class="form-group">
-			    					<div class="input-wrap">
-			            		<div class="icon"><span class=""></span></div>
-			            		<input type="text" class="form-control" placeholder="Email">
-		            		</div>
-			    				</div>
-			    				<div class="form-group">
-			    					<div class="input-wrap">
-			            		<div class="icon"><span class=""></span></div>
-			            		<input type="password" class="form-control appointment_time" placeholder="Contraseña">
-		            		</div>
-			    				</div>
-		    				</div>
-		    				<div class="">
-		    					
-			            <div class="form-group">
-                    <a href="pagos.html" class="btn btn-primary btn-lg " tabindex="-1" role="button" aria-disabled="true">Registrar</a>
-
-			            </div>
-		    				</div>
-		    			</form>
-		    		</div>
-	        </div>
-		    </div>
-			</div>
-		</section>
+		
 
     <br>
     
@@ -366,7 +253,7 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-
+<script src="js/buscadorUser.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>

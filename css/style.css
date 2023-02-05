@@ -6631,7 +6631,7 @@ button.bg-dark:focus {
 
 .pb-5,
 .py-5 {
-  padding-bottom: 3rem !important; }
+  padding-bottom: 1rem !important; }
 
 .pl-5,
 .px-5 {
@@ -9623,17 +9623,12 @@ textarea.form-control {
    #noticia6{
     background-image: url('/images/Noticia6.png');
    }
-   #cardwit{
-    width: 18rem;
+
+   #ImagenServicio{
+    width: 500px;
+    
    }
 
-   #hospital{
-    width: 18rem;
+   #utn{
+    width: 250px;
    }
-
-   #cardh{
-    background: #222;
-    border: 1px solid #dd2476;
-    color: rgba(250, 250, 250, 0.8);
-    margin-bottom: 2rem;
-  }
