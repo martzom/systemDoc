@@ -56,8 +56,8 @@
 	          <li class="nav-item cta mr-md-2">
               <div class="input-group">
                 <div class="input-group">
-                  <input class="form-control me-2" type="text" placeholder="Buscar">
-                  <button class="btn btn-primary" type="button">Buscar</button>
+                  <input class="form-control me-2" type="text" id="buscadorin" placeholder="Buscar">
+                  <button class="btn btn-primary" id="btnbuscador" onclick="buscador()" type="button">Buscar</button>
               </div>
             </li>
 	        </ul>
@@ -80,7 +80,7 @@
         </div>
       </div>
     </section>
-		<section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-2 bg-light">
+		<section id="servicios" class="ftco-section ftco-no-pt ftco-no-pb ftco-services-2 bg-light">
       <div class="container">
   <div class="row d-flex">
       <div class="col-md-7 py-5">
@@ -184,7 +184,7 @@
 		</section>
 
     <br>
-    <h1 class="display-3 text-center">Elegir suscipción</h1>
+    <h1 id="pagos" class="display-3 text-center">Elegir suscipción</h1>
     <section class="pricing py-5">
         <div class="container">
             <div class="row">
@@ -264,7 +264,7 @@
 
 
 
-		<h1 class="display-3 text-primary bg-dark text-center">Busca especialidades</h1>
+		<h1 id="especialidades" class="display-3 text-primary bg-dark text-center">Busca especialidades</h1>
 		<section class="ftco-section ftco-no-pt ftco-no-pb" id="department-section">
     	<div class="container-fluid px-0">
     		<div class="row no-gutters">
@@ -369,7 +369,7 @@
     	</div>
     </section>
 
-    <section class="ftco-section testimony-section img" id="imgTestimonio">
+    <section id="testimonios" class="ftco-section testimony-section img" id="imgTestimonio">
     	<div class="overlay"></div>
       <div class="container">
         <div class="row justify-content-center pb-3">
@@ -500,7 +500,7 @@
   <script src="js/scrollax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
-  
+<script src="js/buscador.js"></script>
   <script src="js/main.js"></script>
   </body>
 </html>
