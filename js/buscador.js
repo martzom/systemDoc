@@ -31,6 +31,6 @@ switch (buscadorin) {
         window.location.href = 'login.html';
       break;
     default:
-      alert('no se encuentra');
+      alert('no se encuentra su busqueda');
   }
 }
