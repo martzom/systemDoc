@@ -9635,3 +9635,17 @@ textarea.form-control {
    #mapa{
     width: 700px;
    }
+
+   .justificado{
+    text-align: justify;
+   }
+   .negro{
+    color: #d3d9df
+   }
+   .sub{
+    color: #000;
+    background-color: white;
+   }
+   .imgcard{
+    width: 18rem;
+   }
