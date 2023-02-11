@@ -312,7 +312,8 @@ h4, .h4 {
   font-size: 1.5rem; }
 
 h5, .h5 {
-  font-size: 1.25rem; }
+  font-size: 1.25rem; 
+text-align: center;}
 
 h6, .h6 {
   font-size: 1rem; }
@@ -3781,6 +3782,9 @@ input[type="button"].btn-block {
       color: #fff; }
 
 .card {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3793,8 +3797,12 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem; }
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.25rem;
+
+   
+}
+
   .card > hr {
     margin-right: 0;
     margin-left: 0; }
@@ -3838,6 +3846,11 @@ input[type="button"].btn-block {
   .card-header + .list-group .list-group-item:first-child {
     border-top: 0; }
 
+
+.card-text{
+  text-align: justify;
+}
+
 .card-footer {
   padding: 0.75rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
@@ -3867,10 +3880,16 @@ input[type="button"].btn-block {
   width: 100%;
   border-radius: calc(0.25rem - 1px); }
 
+  
+
 .card-img-top {
-  width: 100%;
+  width: 350px;
+  height: 350px;
+
   border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px); }
+  border-top-right-radius: calc(0.25rem - 1px);
+  
+}
 
 .card-img-bottom {
   width: 100%;
@@ -9649,3 +9668,5 @@ textarea.form-control {
    .imgcard{
     width: 18rem;
    }
+
+  
