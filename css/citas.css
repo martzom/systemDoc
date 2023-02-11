@@ -13,7 +13,7 @@ body {
 }
 
 #cita{
-    background-color:  #79abe0;;
+    background-color:  #87bef8;;
 }
 
 
@@ -26,12 +26,6 @@ body {
 
 }
 
-.btn {
-    font-weight: 400;
-    padding: 1rem 2rem;
-    border-radius: 5rem;
-    min-width: 10rem;
-}
 
 .btn-outline-dark {
     border: 2px solid var(--color-dark-xx);
@@ -40,7 +34,7 @@ body {
 
 .form-control {
     background-color: var(--color-dark-xx);
-    border: 2px solid var(--color-dark-xx);
+  /*  border: 2px solid var(--color-dark-xx);*/
     border-radius: .2rem;
     padding: 1.5rem 1rem;
 }

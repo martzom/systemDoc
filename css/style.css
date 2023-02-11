@@ -5299,7 +5299,7 @@ button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
 .bg-light {
-  background-color: #f8f9fa !important; }
+  background-color: #d0dde9 !important; }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
@@ -8394,6 +8394,9 @@ h1, h2, h3, h4, h5,
 .bg-darken {
   background: #232931; }
 
+.bg-secondary2{
+ background-color:#d7d9dc;
+}
 .btn {
   cursor: pointer;
   -webkit-border-radius: 30px;
@@ -8656,7 +8659,9 @@ textarea.form-control {
 
 .ftco-animate {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+ }
+ 
 
 .bg-primary {
   background: #207dff !important; }
@@ -9356,6 +9361,7 @@ textarea.form-control {
     text-transform: uppercase; }
 
 .contact-section .contact-form {
+  background-color: #d7d9dc;
   width: 100%; }
 
 .block-9 .form-control {
@@ -9644,7 +9650,7 @@ textarea.form-control {
    }
 
    #ImagenServicio{
-    width: 500px;
+    width: 550px;
     
    }
 
