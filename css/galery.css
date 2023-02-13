@@ -36,6 +36,11 @@ h1 span{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
     gap: 30px;
+   
+}
+
+.Igms{
+    box-shadow: -1px -1px 6px 0 rgb(102, 179, 221), 4px 4px 16px 2px rgb(92, 162, 235);
 }
 .img-gallery img{
     width: 100%;
@@ -80,3 +85,6 @@ h1 span{
         padding: 0;
     }
 }
+
+
+
