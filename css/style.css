@@ -9655,10 +9655,15 @@ textarea.form-control {
    }
 
    #logo{
-    width: 130%;
+    width: 140%;
+   
+   }
+   .logo{
+    margin-right: 60px;
    }
    #mapa{
     width: 700px;
+    
    }
 
    .justificado{
