@@ -73,17 +73,22 @@
     <div>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="indexAdm.html">Inicio</a></li>
-        <li class="breadcrumb-item" aria-current="page">Especialidades</li>
-      </ol>
+        <li class="breadcrumb-item" aria-current="page">Medicos</li>
+        </ol>
     </div>
     <div class="table-responsive">
-    <button class="btn btn-primary" type="button"><i class='bx bx-add-to-queue'></i></button>
+        <h1 class="titulo">Lista de medicos</h1>
+    <button class="btn botonAgregar btn-primary" onclick="location.href='agregarMedico.html'" type="submit"><i class='bx bx-add-to-queue'></i></button>
+    <br><br>
     <table class="table">
         <thead>
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">Especialidad</th>
-            <th scope="col">Nombre hospital</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Foto</th>
+            <th scope="col">Historial</th>
             <th scope="col">Modificar</th>
             <th scope="col">Consultar</th>
             <th scope="col">Eliminar</th>
@@ -92,32 +97,33 @@
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Cardiología </td>
-            <td>Luz Maria</td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
+            <td>Martin </td>
+            <td>Peña Anzaldo</td>
+            <td>23</td>
+            <td>Foto</td>
+            <td>1 años en el hospital de la perla </td>
+            <td> <button class="btn btn-primary" onclick="location.href='modificarMedico.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Ginecología</td>
-            <td>MedicBoss</td>
+            <td>Jose </td>
+            <td>Perez Badillo</td>
+            <td>38</td>
+            <td>Foto</td>
+            <td>7 años en el hospital como doctor general </td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Neurología</td>
-            <td>IMSS</td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Psicología</td>
-            <td>Médica Sur</td>
+            <td>Martin </td>
+            <td>Peña Anzaldo</td>
+            <td>23</td>
+            <td>Foto</td>
+            <td>5 años en el hospital de la perla </td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>

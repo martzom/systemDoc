@@ -9654,11 +9654,16 @@ textarea.form-control {
     
    }
 
-   #utn{
-    width: 250px;
+   #logo{
+    width: 140%;
+   
+   }
+   .logo{
+    margin-right: 60px;
    }
    #mapa{
     width: 700px;
+    
    }
 
    .justificado{
@@ -9675,4 +9680,6 @@ textarea.form-control {
     width: 18rem;
    }
 
-  
+  .botonAgregar{
+    margin-left: 20px;
+  }
