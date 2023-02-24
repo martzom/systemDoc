@@ -106,8 +106,26 @@ h2 {
     transition: all 500ms ease-out;/*muestra efecto*/
     margin-top: 20px;/*deslizamiento hacia bajo del titulo h3*/
 }
+.img-usu {
+    height: 10%;/*Altura en pixeles*/
+    width: 10%;/*Ancho en pixeles*/
+}
+
 @media screen and (max-width: 1000px) {
-    .cards figure .capa h3 {
-        font-size: 0.8rem;
-    }   
+    .img-usu {
+        height: 10%;/*Altura en pixeles*/
+        width: 10%;/*Ancho en pixeles*/
+    }
+}
+@media screen and (max-width: 600px) {
+    .img-usu {
+        height: 30px;/*Altura en pixeles*/
+        width: 30px;/*Ancho en pixeles*/
+    }
+}
+@media screen and (max-width: 300px) {
+    .img-usu {
+        height:  10%;/*Altura en pixeles*/
+        width:  10%;/*Ancho en pixeles*/
+    }
 }
