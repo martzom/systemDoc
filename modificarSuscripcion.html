@@ -38,7 +38,7 @@
 			    </div>
 		    </div>
 		  </div>
-    </div> 
+    </div>
 	<!--Aqui inicia el menu-->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
@@ -75,29 +75,30 @@
           <div class="col-lg-6 offset-lg-3 p-4">
             <div class="card">
               <div class="card-body">
-                <h3 class="titulo-noticia">Agregar noticia</h3>
+                <h3 class="titulo-suscripcion">Modificar Suscripción</h3>
                 <span class="badge ">*Todos los campos son obligatorios.</span>
                 <form class="mt-4"  >
-                  <div class="row-not">
+                  <div class="row-sus">
                     <div class="col">
-                      <input type="date" formControlName="fecha" class="form-control form-control-lg" placeholder="Fecha" />
+                        <input type="text" formControlName="nombre_sus" class="form-control form-control-lg" placeholder="Nombre Suscripción" />
+                      </div><br>
+                    <div class="col">
+                        <input type="text" formControlName="detalles_sus" class="form-control form-control-lg" placeholder="Detalle Suscripción" />
+                      </div><br>
+                      <div class="col">
+                       <label class="label" for="">Fecha Inicio <input type="date" formControlName="fecha_inicio" class="form-control form-control-lg" placeholder="Fecha Inicio" /></label>
+                      </div><br>
+                    <div class="col">
+                     <label class="label" for="">Fecha Término<input type="date" formControlName="fecha_termino" class="form-control form-control-lg" placeholder="Fecha Termino" /></label>
                     </div><br>
                     <div class="col">
-                      <input type="text" formControlName="not-hospital" class="form-control form-control-lg"
-                        placeholder="Hospital" />
-                    </div>
-                    <div class="col">
-                    <label>Ingrese foto</label>
-                    <input type="file" formControlName="imagen" class="form-control form-control-lg mt-3"
-                    placeholder="imagen" /> <br>
+                        <input type="number" formControlName="costo" class="form-control form-control-lg" placeholder="Costo" />
+                      </div><br>
                   </div>
-                  <div class="col">
-                    <textarea  class="form-control form-control-lg mt-3" name="" id="" cols="10" rows="5" placeholder="Ingrese contenido"></textarea>
-                  </div>
-
+                     
                   <div class="mt-3 align-items-center" >
-                    <button type="button" onclick="location.href='listaNoticias.html'" class="btn btn-danger"></a>Volver</button>
-                    <button type="button" onclick="location.href='listaNoticias.html'" class="btn btn-primary"></a>Guardar</button>
+                    <button type="button" onclick="location.href='listaSuscripcion.html'" class="btn btn-danger"></a>Volver</button>
+                    <button type="button" onclick="location.href='listaSuscripcion.html'" class="btn btn-primary"></a>Guardar</button>
                 </button>
                   </div><br>
                 </form>

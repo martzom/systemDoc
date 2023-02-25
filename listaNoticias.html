@@ -74,19 +74,20 @@
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="indexAdm.html">Inicio</a></li>
         <li class="breadcrumb-item" aria-current="page">Noticias</li>
-        </ol>
+      </ol>
     </div>
     <div class="table-responsive">
-        <h1 class="titulo">Lista de Noticias</h1>
+        <h1 class="titulo">Lista de noticias</h1>
     <button class="btn botonAgregar btn-success" onclick="location.href='agregarNoticia.html'" type="submit"><i class='bx bx-add-to-queue'></i></button>
   
     <table class="table">
         <thead>
           <tr class="column-noticias">
             <th scope="col">ID</th>
-            <th class="fech-not" scope="col">Fecha</th>
+            <th  scope="col">Fecha</th>
             <th scope="col">Contenido</th>
             <th scope="col">Imagen</th>
+            <th scope="col">Hospital</th>
             <th scope="col">Modificar</th>
             <th scope="col">Consultar</th>
             <th scope="col">Eliminar</th>
@@ -98,7 +99,8 @@
             <td class="fech-not">13-01-21</td>
             <td class="cont-not">La jefa de Gobierno de la Ciudad de México informó que los nuevos espacios se adaptarán en el Hospital General de Tláhuac del ISSSTE</td>
             <td>Imagen</td>
-            <td> <button class="btn btn-warning" onclick="location.href='modificarMedico.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
+            <td class="fech-not">La Perla</td>
+            <td> <button class="btn btn-warning" onclick="location.href='modificarNoticia.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
             <td> <button class="btn btn-danger" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
@@ -107,7 +109,8 @@
             <td class="fech-not">23-02-23</td>
             <td class="cont-not">La Fundación Querer y HM Hospitales se unen para avanzar en la investigación de enfermedades neurológicas en la infancia</td>
             <td>Imagen</td>
-            <td> <button class="btn btn-warning" onclick="location.href='modificarMedico.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
+            <td class="fech-not">Médica Sur</td>
+            <td> <button class="btn btn-warning" onclick="location.href='modificarNoticia.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
             <td> <button class="btn btn-danger" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
@@ -116,7 +119,8 @@
             <td class="fech-not">12-02-23</td>
             <td class="cont-not">Los cirujanos alertan: faltan plazas en casi todos los hospitales</td>
             <td>Imagen</td>
-            <td> <button class="btn btn-warning"  onclick="location.href='modificarNoticias.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
+            <td class="fech-not">IMSS</td>
+            <td> <button class="btn btn-warning"  onclick="location.href='modificarNoticia.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
             <td> <button class="btn btn-danger" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
