@@ -50,20 +50,17 @@
 		  
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="indexAdm.html" class="nav-link"><span>Inicio</span></a></li>
+            <li class="nav-item"><a href="indexAdm.html" class="nav-link"><span>Inicio</span></a></li>
 	          <li class="nav-item"><a href="PruebaUsuarios.html" class="nav-link"><span>Usuarios</span></a></li>
 			  <li class="nav-item"><a href="PruebaEspecialidades.html" class="nav-link"><span>Especialidades</span></a></li>
 	          <li class="nav-item"><a href="PruebaHospitales.html" class="nav-link"><span>Hospitales</span></a></li>
             <li class="nav-item"><a href="listaMedicos.html" class="nav-link"><span>Medicos</span></a></li>
             <li class="nav-item"><a href="listaComentario.html" class="nav-link"><span>Cometarios</span></a></li>
-
-
 	          <li class="nav-item cta mr-md-2">
               <div class="input-group">
                 <div class="input-group">
                   <input class="form-control me-2" type="text" id="buscadorin" placeholder="Buscar">
                   <button class="btn btn-primary" id="btnbuscador" onclick="buscador()" type="button">Buscar</button>
-
               </div>
             </li>
 	        </ul>
@@ -78,23 +75,22 @@
     <div>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="indexAdm.html">Inicio</a></li>
-        <li class="breadcrumb-item" aria-current="page">Usuarios</li>
+        <li class="breadcrumb-item" aria-current="page">Comentarios</li>
         </ol>
     </div>
     <div class="table-responsive">
-    <a href="agregarUsuario.html"><button class="btn btn-primary" type="button"><i class='bx bx-add-to-queue'></i></button></a>
+        <h1 class="titulo">Lista de cometario</h1>
+    <button class="btn botonAgregar btn-primary" onclick="location.href='agregarComentario.html'" type="submit"><i class='bx bx-add-to-queue'></i></button>
+    <br><br>
     <table class="table">
         <thead>
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">Nombres</th>
-            <th scope="col">Apellidos</th>
-            <th scope="col">Edad</th>
-            <th scope="col">Telefono</th>
-            <th scope="col">Domicilio</th>
-            <th scope="col">Correo</th>
-            <th scope="col">Password</th>
-            <th scope="col">Foto</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Email</th>
+            <th scope="col">Fecha de creacion</th>
+            <th scope="col">Asunto</th>
+            <th scope="col">Mensaje</th>
             <th scope="col">Modificar</th>
             <th scope="col">Consultar</th>
             <th scope="col">Eliminar</th>
@@ -103,71 +99,37 @@
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Nelly </td>
-            <td>Alanis</td>
-            <td>20</td>
-            <td>5521909901</td>
-            <td>Calle  #, Nezahualcoyotl</td>
-            <td>@gmail.com</td>
-            <td>PauAlanis10</td>
-            <td><img class="img-usu" src="images/nelly.jpg"></td>
-            <td> <a href="modificarUsuario.html"><button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></a> </td>
+            <td>Martin Peña</td>
+            <td>Martin@gmail.com</td>
+            <td>23/02/23</td>
+            <td>suscripcion plus</td>
+            
+            <td>Muy bueno la suscripcion </td>
+            <td> <button class="btn btn-primary" onclick="location.href='modificarMedico.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Martin</td>
-            <td>Anzaldo</td>
-            <td>21</td>
-            <td>5521909901</td>
-            <td>Calle  #, Nezahualcoyotl</td>
-            <td>@gmail.com</td>
-            <td>MartinAnzaldo</td>
-            <td><img  class="img-usu" src="images/martin.jpg" ></td>
-            <td> <a href="modificarUsuario.html"><button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></a> </td>
+            <td>Celeste Hernadez</td>
+            <td>Celeste@gmail.com</td>
+            <td>23/02/23</td>
+            <td>suscripcion pro</td>
+            
+            <td>Buenas noticias</td>
+            <td> <button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Mario</td>
-            <td>Cortez</td>
-            <td>20</td>
-            <td>5521909901</td>
-            <td>Calle  #, Nezahualcoyotl</td>
-            <td>@gmail.com</td>
-            <td>MarioCortez</td>
-            <td><img  class="img-usu" src="images/mario.jpg"></td>
-            <td> <a href="modificarUsuario.html"><button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></a> </td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Alexis</td>
-            <td>Pulido</td>
-            <td>20</td>
-            <td>5521909901</td>
-            <td>Calle  #, Nezahualcoyotl</td>
-            <td>@gmail.com</td>
-            <td>AlexPulido</td>
-            <td><img  class="img-usu" src="images/alexis.jpg"></td>
-            <td> <a href="modificarUsuario.html"><button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></a> </td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Brian</td>
-            <td>Reyes</td>
-            <td>20</td>
-            <td>5521909901</td>
-            <td>Calle  #, Nezahualcoyotl</td>
-            <td>@gmail.com</td>
-            <td>BrianReyes</td>
-            <td><img  class="img-usu" src="images/brian.jpg" ></td>
-            <td> <a href="modificarUsuario.html"><button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></a> </td>
+            <td>Jose Perez</td>
+            <td>Jose@gmail.com</td>
+            <td>23/02/23</td>
+            <td>suscripcion plus</td>
+            
+            <td>hospitales bien informados</td>
+            <td> <button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
@@ -240,11 +202,12 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/aos.js"></script>
+  <script src="js/buscadoradmin.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
-  <script src="js/buscadoradmin.js"></script>
+  
   <script src="js/main.js"></script>
   </body>
 </html>

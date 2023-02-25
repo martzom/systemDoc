@@ -9683,3 +9683,6 @@ textarea.form-control {
   .botonAgregar{
     margin-left: 20px;
   }
+  #buscadorin{
+    width: 110px;
+  }
