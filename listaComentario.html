@@ -75,17 +75,22 @@
     <div>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="indexAdm.html">Inicio</a></li>
-        <li class="breadcrumb-item" aria-current="page">Especialidades</li>
+        <li class="breadcrumb-item" aria-current="page">Comentarios</li>
         </ol>
     </div>
     <div class="table-responsive">
-    <button class="btn btn-primary" type="button"><i class='bx bx-add-to-queue'></i></button>
+        <h1 class="titulo">Lista de cometario</h1>
+    <button class="btn botonAgregar btn-primary" onclick="location.href='agregarComentario.html'" type="submit"><i class='bx bx-add-to-queue'></i></button>
+    <br><br>
     <table class="table">
         <thead>
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">Especialidad</th>
-            <th scope="col">Nombre hospital</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Email</th>
+            <th scope="col">Fecha de creacion</th>
+            <th scope="col">Asunto</th>
+            <th scope="col">Mensaje</th>
             <th scope="col">Modificar</th>
             <th scope="col">Consultar</th>
             <th scope="col">Eliminar</th>
@@ -94,32 +99,36 @@
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Cardiología </td>
-            <td>Luz Maria</td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
+            <td>Martin Peña</td>
+            <td>Martin@gmail.com</td>
+            <td>23/02/23</td>
+            <td>suscripcion plus</td>
+            
+            <td>Muy bueno la suscripcion </td>
+            <td> <button class="btn btn-primary" onclick="location.href='modificarMedico.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Ginecología</td>
-            <td>MedicBoss</td>
+            <td>Celeste Hernadez</td>
+            <td>Celeste@gmail.com</td>
+            <td>23/02/23</td>
+            <td>suscripcion pro</td>
+            
+            <td>Buenas noticias</td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Neurología</td>
-            <td>IMSS</td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Psicología</td>
-            <td>Médica Sur</td>
+            <td>Jose Perez</td>
+            <td>Jose@gmail.com</td>
+            <td>23/02/23</td>
+            <td>suscripcion plus</td>
+            
+            <td>hospitales bien informados</td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
