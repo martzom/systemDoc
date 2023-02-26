@@ -9686,3 +9686,8 @@ textarea.form-control {
   #buscadorin{
     width: 110px;
   }
+  .centrado{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }

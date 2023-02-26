@@ -50,17 +50,17 @@
 		  
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
-            <li class="nav-item"><a href="indexAdm.html" class="nav-link"><span>Inicio</span></a></li>
+	          <li class="nav-item"><a href="indexAdm.html" class="nav-link"><span>Inicio</span></a></li>
 	          <li class="nav-item"><a href="PruebaUsuarios.html" class="nav-link"><span>Usuarios</span></a></li>
 			  <li class="nav-item"><a href="PruebaEspecialidades.html" class="nav-link"><span>Especialidades</span></a></li>
 	          <li class="nav-item"><a href="PruebaHospitales.html" class="nav-link"><span>Hospitales</span></a></li>
-            <li class="nav-item"><a href="listaMedicos.html" class="nav-link"><span>Medicos</span></a></li>
-            <li class="nav-item"><a href="listaComentario.html" class="nav-link"><span>Cometarios</span></a></li>
+              <li class="nav-item"><a href="PruebaCita.html" class="nav-link"><span>Cita</span></a></li>
 	          <li class="nav-item cta mr-md-2">
               <div class="input-group">
                 <div class="input-group">
                   <input class="form-control me-2" type="text" id="buscadorin" placeholder="Buscar">
                   <button class="btn btn-primary" id="btnbuscador" onclick="buscador()" type="button">Buscar</button>
+
               </div>
             </li>
 	        </ul>
@@ -75,21 +75,23 @@
     <div>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="indexAdm.html">Inicio</a></li>
-        <li class="breadcrumb-item" aria-current="page">Comentarios</li>
+        <li class="breadcrumb-item" aria-current="page">Cita</li>
         </ol>
     </div>
     <div class="table-responsive">
-        <h1 class="titulo">Lista de cometario</h1>
-    
-    <table class="table">
+      <h1 class="titulo">Lista de citas</h1>
+      <button class="btn btn-primary" onclick="location.href='agregarCita.html'" type="button"><i class='bx bx-add-to-queue'></i></button><br><br>
+      <table class="table">
         <thead>
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Nombre</th>
-            <th scope="col">Email</th>
-            <th scope="col">Fecha de creacion</th>
-            <th scope="col">Asunto</th>
-            <th scope="col">Mensaje</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Hora</th>
+            <th scope="col">Hospital</th>
+            <th scope="col">Especialidad</th>
+            <th scope="col">Estatus de cita</th>
+            <th scope="col">Modificar</th>
             <th scope="col">Consultar</th>
             <th scope="col">Eliminar</th>
           </tr>
@@ -97,41 +99,57 @@
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Martin Peña</td>
-            <td>Martin@gmail.com</td>
-            <td>23/02/23</td>
-            <td>suscripcion plus</td>
-            
-            <td>Muy bueno la suscripcion </td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
+            <td>Nelly Paulina </td>
+            <td>25/02/2023</td>
+            <td>9:00 am</td>
+            <td>Luz Maria</td>
+            <td>Cardiología</td>
+            <td>Activa</td>
+            <td> <button class="btn btn-primary" onclick="location.href='modificarCita.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
+            <td> <button class="btn btn-primary" onclick="location.href='consultarCita.html'" type="button"><i class='bx bx-copy-alt'></i></button></td>
+            <td> <button class="btn btn-primary Delete" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Celeste Hernadez</td>
-            <td>Celeste@gmail.com</td>
-            <td>23/02/23</td>
-            <td>suscripcion pro</td>
-            
-            <td>Buenas noticias</td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
+            <td>Martin Peña</td>
+            <td>25/02/2023</td>
+            <td>9:00 am</td>
+            <td>IMSS</td>
+            <td>Cardiología</td>
+            <td>Cancelada</td>
+            <td> <button class="btn btn-primary" onclick="location.href='modificarCita.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
+            <td> <button class="btn btn-primary" onclick="location.href='consultarCita.html'" type="button"><i class='bx bx-copy-alt'></i></button></td>
+            <td> <button class="btn btn-primary Delete"  type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Jose Perez</td>
-            <td>Jose@gmail.com</td>
-            <td>23/02/23</td>
-            <td>suscripcion plus</td>
-            
-            <td>hospitales bien informados</td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
+            <td>Mario Cortez</td>
+            <td>25/02/2023</td>
+            <td>9:00 am</td>
+            <td>Luz Maria</td>
+            <td>Cardiología</td>
+            <td>Activa</td>
+            <td> <button class="btn btn-primary" onclick="location.href='modificarCita.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
+            <td> <button class="btn btn-primary" onclick="location.href='consultarCita.html'" type="button"><i class='bx bx-copy-alt'></i></button></td>
+            <td> <button class="btn btn-primary Delete"  type="button"><i class='bx bx-trash'></i></button></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Alexis Pulido</td>
+            <td>25/02/2023</td>
+            <td>9:00 am</td>
+            <td>IMSS</td>
+            <td>Cardiología</td>
+            <td>En espera</td>
+            <td> <button class="btn btn-primary" onclick="location.href='modificarCita.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
+            <td> <button class="btn btn-primary" onclick="location.href='consultarCita.html'" type="button"><i class='bx bx-copy-alt'></i></button></td>
+            <td> <button class="btn btn-primary Delete" class="Delete" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
         </tbody>
       </table>
  </div>
-</center>
+
+    
 		<!--Inicio footer-->
     <footer class="ftco-footer ftco-section img" style="background-image: url(images/footer-bg.jpg);">
     	<div class="overlay"></div>
@@ -197,12 +215,13 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/aos.js"></script>
-  <script src="js/buscadoradmin.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
-  
+  <script src="js/buscadoradmin.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/cita.js"></script>
+
   </body>
 </html>

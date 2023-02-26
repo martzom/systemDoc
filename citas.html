@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/citas.css">
+  <link rel="stylesheet" href="css/cita_modal.css">
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -88,55 +89,90 @@
                          <p class="text-muted mb-5">Ingresa la siguiente información para registrar tu cita.</p>
      
                          <form>
+                          <div class="form-group mb-3" >
+                            <label class="font-weight-bold">Nombre del paciente <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" placeholder="Nombre del paciente"required>
+                          </div>
                              <div class="form-row mb-2">
                                  <div class="form-group col-md-6">
-                                     <label class="font-weight-bold">Nombre del paciente <span class="text-danger">*</span></label>
-                                     <input type="text" class="form-control" placeholder="Nombre completo">
+                                     <label class="font-weight-bold">Edad <span class="text-danger">*</span></label>
+                                     <input type="number" class="form-control" placeholder="Edad" required>
                                  </div>
                                  <div class="form-group col-md-6">
                                      <label class="font-weight-bold">Número teléfonico<span class="text-danger">*</span></label>
-                                     <input type="number" class="form-control" placeholder="Numero de teléfono">
+                                     <input type="number" class="form-control" placeholder="Numero de teléfono" required>
                                  </div>
                              </div>
-                             <div class="form-row mb-2">
-                                <div class="form-group col-md-6">
-                                    <label class="font-weight-bold">Edad <span class="text-danger">*</span></label>
-                                    <input type="number" class="form-control" placeholder="Edad">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label class="font-weight-bold">Género<span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Género">
-                                </div>
-                            </div>
                             <div class="form-row mb-2">
                                 <div class="form-group col-md-6">
                                     <label class="font-weight-bold">Fecha <span class="text-danger">*</span></label>
-                                    <input type="date" class="form-control" placeholder="Edad">
+                                    <input type="date" class="form-control" placeholder="Fecha de la cita" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label class="font-weight-bold">Hora<span class="text-danger">*</span></label>
-                                    <input type="time" class="form-control" placeholder="Género">
+                                    <input type="time" class="form-control" placeholder="Horario de la cita" required>
                                 </div>
                             </div>
-                             <div class="form-group mb-3">
-                                 <label class="font-weight-bold">Correo electrónico <span class="text-danger">*</span></label>
-                                 <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico">
-                             </div>
-                             <div class="form-group mb-3">
-                                 <label class="font-weight-bold">Síntomas<span class="text-danger">*</span></label>
-                                 <input type="text" class="form-control" placeholder="Ingresa tus síntomas">
-                             </div>
-                             <div class="form-group mb-3">
-                                <label class="font-weight-bold">Departamento<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" placeholder="Ingresa el departamento">
+                            <label class="font-weight-bold">Tipo de cita<span class="text-danger">*</span></label>
+                            <div class="form-check"id="Presencial">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"  checked required>
+                              <label class="form-check-label" for="flexRadioDefault1">
+                                Presencial 
+                              </label>
                             </div>
+                            <div class="form-check" id="Adomicilio">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked required>
+                              <label class="form-check-label" for="flexRadioDefault2" >
+                                A domicilio 
+                              </label>
+                            </div>
+                            <br>
+                          <div class="form-group mb-3" id="direccion">
+                            <label class="font-weight-bold">Dirección <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" placeholder="Dirección" required>
+                          </div>
+
+                          <div class="form-group mb-3">
+                            <label class="font-weight-bold">Hospital<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" placeholder="Hospital" required>
+                          </div>
+                          <div class="form-group mb-3">
+                            <label class="font-weight-bold">Especialidad<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" placeholder="Especialidad" required>
+                        </div>
+                             
+                            
                              <br>
-                             <button class="btn btn-primary width-100">Regístrar cita</button>
+                             <!--Boton-->
+                             <button type="submit" class="btn btn-primary" >
+                             <div class="boton-modal" >
+                              <label for="btn-modal" >
+                               
+                                 Agregar cita
+                              
+                              </label>
+                             </div>
+                            </button>
+<!--Fin de Boton-->
                          </form>
                      </div>
                 </div>
             </div>
         </section>
+<!--Ventana Modal-->
+  <input type="checkbox" id="btn-modal">
+  <div class="container-modal">
+      <div class="content-modal">
+        <center><h2>¡Se a registrado correctamente su cita!</h2></center>
+          
+          <div class="btn-cerrar">
+              <label for="btn-modal">Cerrar</label>
+          </div>
+       
+      </div>
+      <label for="btn-modal" class="cerrar-modal"></label>
+  </div>
+<!--Fin de Ventana Modal-->
         <!--Aqui termina el formulario para citas medicas-->
 
 
@@ -212,5 +248,6 @@
   <script src="js/buscador.js"></script>
   <script src="js/main.js"></script>
   <script src="js/galery.js"></script>
+  <script src="js/cita.js"></script>
 </body>
 </html>

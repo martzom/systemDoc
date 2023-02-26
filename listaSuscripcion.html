@@ -33,7 +33,7 @@
       <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
         <div class="col-lg-12 d-block">
           <div class="row d-flex justify-content-end" >
-            <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">                <p class="mb-0 register-link"><a href="index.html" class="mr-3 text-dark bg-danger">Cerrar sesion</a>
+            <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">                <p class="mb-0 register-link"><a href="index.html" class="mr-3 text-dark bg-danger">Cerrar sesión</a>
             </div>
           </div>
         </div>
@@ -54,8 +54,6 @@
 	          <li class="nav-item"><a href="PruebaUsuarios.html" class="nav-link"><span>Usuarios</span></a></li>
 			  <li class="nav-item"><a href="PruebaEspecialidades.html" class="nav-link"><span>Especialidades</span></a></li>
 	          <li class="nav-item"><a href="PruebaHospitales.html" class="nav-link"><span>Hospitales</span></a></li>
-            <li class="nav-item"><a href="listaMedicos.html" class="nav-link"><span>Medicos</span></a></li>
-            <li class="nav-item"><a href="listaComentario.html" class="nav-link"><span>Cometarios</span></a></li>
 	          <li class="nav-item cta mr-md-2">
               <div class="input-group">
                 <div class="input-group">
@@ -75,21 +73,23 @@
     <div>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="indexAdm.html">Inicio</a></li>
-        <li class="breadcrumb-item" aria-current="page">Comentarios</li>
+        <li class="breadcrumb-item" aria-current="page">Suscripción</li>
         </ol>
     </div>
     <div class="table-responsive">
-        <h1 class="titulo">Lista de cometario</h1>
-    
+        <h1 class="titulo">Lista de suscripción</h1>
+    <button class="btn botonAgregar btn-success" onclick="location.href='agregarSuscripcion.html'" type="submit"><i class='bx bx-add-to-queue'></i></button>
+  
     <table class="table">
         <thead>
-          <tr>
+          <tr class="column-noticias">
             <th scope="col">ID</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Email</th>
-            <th scope="col">Fecha de creacion</th>
-            <th scope="col">Asunto</th>
-            <th scope="col">Mensaje</th>
+            <th scope="col">Nombre suscripción</th>
+            <th scope="col">Detalle suscripción</th>
+            <th class="fech-not" scope="col">Fecha Inicio</th>
+            <th class="fech-not" scope="col">Fecha Término</th>
+            <th scope="col">Costo</th>
+            <th scope="col">Modificar</th>
             <th scope="col">Consultar</th>
             <th scope="col">Eliminar</th>
           </tr>
@@ -97,40 +97,40 @@
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Martin Peña</td>
-            <td>Martin@gmail.com</td>
-            <td>23/02/23</td>
-            <td>suscripcion plus</td>
-            
-            <td>Muy bueno la suscripcion </td>
+            <td class="cont-sus">Gratis</td>
+            <td class="cont-sus2">Ver noticias y buscar hospitales</td>
+            <td class="fech-not">13-01-23</td>
+            <td class="fech-not">13-02-23</td>
+            <td class="cont-cost">0.00</td>
+            <td> <button class="btn btn-warning" onclick="location.href='modificarSuscripcion.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
+            <td> <button class="btn btn-danger" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
           <tr>
-            <th scope="row">2</th>
-            <td>Celeste Hernadez</td>
-            <td>Celeste@gmail.com</td>
-            <td>23/02/23</td>
-            <td>suscripcion pro</td>
-            
-            <td>Buenas noticias</td>
+            <th scope="row">1</th>
+            <td class="cont-sus">Plus</td>
+            <td class="cont-sus2">Ver noticias, buscar hospitales, ver especialidades, horarios de hospitales</td>
+            <td class="fech-not">15-02-23</td>
+            <td class="fech-not">15-03-23</td>
+            <td class="cont-cost">70.00</td>
+            <td> <button class="btn btn-warning" onclick="location.href='modificarSuscripcion.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
+            <td> <button class="btn btn-danger" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Jose Perez</td>
-            <td>Jose@gmail.com</td>
-            <td>23/02/23</td>
-            <td>suscripcion plus</td>
-            
-            <td>hospitales bien informados</td>
+            <td class="cont-sus">Pro</td>
+            <td class="cont-sus2">Ver noticias, buscar hospitales, ver especialidades, horarios de hospitales, listado de personal</td>
+            <td class="fech-not">04-05-23</td>
+            <td class="fech-not">04-06-23</td>
+            <td class="cont-cost">180.00</td>
+            <td> <button class="btn btn-warning" onclick="location.href='modificarSuscripcion.html'" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
+            <td> <button class="btn btn-danger" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
         </tbody>
       </table>
- </div>
+ </div> 
 </center>
 		<!--Inicio footer-->
     <footer class="ftco-footer ftco-section img" style="background-image: url(images/footer-bg.jpg);">
@@ -155,17 +155,17 @@
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Acerca</h2>
               <ul class="list-unstyled">
-                <li><a href="acerca.html"><span class="icon-long-arrow-right mr-2"></span>Conocenos</a></li>
-                <li><a href="politicas.html"><span class="icon-long-arrow-right mr-2"></span>Politicas de Privacidad</a></li>                  
+                <li><a href="acerca.html"><span class="icon-long-arrow-right mr-2"></span>Conócenos</a></li>
+                <li><a href="politicas.html"><span class="icon-long-arrow-right mr-2"></span>Políticas de Privacidad</a></li>                  
               </ul>
             </div>
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Envianos tus dudas y sugerencias</h2>
+            	<h2 class="ftco-heading-2">Envíanos tus dudas y sugerencias</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">Colonia reforma #172, 57840 Nezahualcoyotl</span></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Colonia reforma #172, 57840 Nezahualcóyotl</span></li>
 	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">554200039</span></a></li>
 	                <li><a href="#"><span class="icon icon-envelope pr-4"></span><span class="text">dudas@systemDoc.com</span></a></li>
 	              </ul>
