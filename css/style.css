@@ -9687,6 +9687,80 @@ textarea.form-control {
     width: 110px;
   }
   .centrado{
-   
+    align-items: center;
     justify-content: center;
   }
+  
+  .textoCenter{
+    text-align: center;
+  }
+
+  .titulo-noticia{
+    text-align: center;
+  }
+  
+  .titulo-suscripcion{
+    text-align: center;
+  }
+  
+  .row-sus{
+    width: 30rem;
+  }
+  
+  .row-not{
+    width: 30rem;
+  }
+  
+  .cont-not{
+    text-align: justify;
+  }
+  
+  .column-noticias{
+    text-align: center;
+  }
+  
+  .fech-not{
+    text-align: center;
+    width: 10%;
+  }
+  
+  .col{
+    text-align: justify;
+  }
+  
+  .column-sus{
+    text-align: justify;
+  }
+  
+  .fech-ini{
+    text-align: center;
+    width: 10%;
+  }
+  
+  .fech-ter{
+    text-align: justify;
+    width: 10%;
+  }
+  
+  .cont-sus{
+    text-align: center;
+  }
+  
+  .cont-sus2{
+    text-align: justify;
+  }
+  
+  .cont-cost{
+    text-align: center;
+    width: 15%;
+  }
+    .botonAgregar{
+      margin-left: 20px;
+    }
+    #buscadorin{
+      width: 110px;
+    }
+  
+  .label{
+    width: 100%;
+    }
