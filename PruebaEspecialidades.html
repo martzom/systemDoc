@@ -33,7 +33,8 @@
       <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
         <div class="col-lg-12 d-block">
           <div class="row d-flex justify-content-end" >
-            <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">                <p class="mb-0 register-link"><a href="index.html" class="mr-3 text-dark bg-danger">Cerrar sesion</a>
+            <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">               
+               <p class="mb-0 register-link"><a href="index.html" class="mr-3 text-dark bg-danger">Cerrar sesion</a>
             </div>
           </div>
         </div>
@@ -79,13 +80,16 @@
       </ol>
     </div>
     <div class="table-responsive">
-    <button class="btn btn-primary" type="button"><i class='bx bx-add-to-queue'></i></button>
+   <a href="agregarEspecialidad.html"><button class="btn btn-primary" type="button"><i class='bx bx-add-to-queue'></i></button></a> 
     <table class="table">
         <thead>
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Especialidad</th>
-            <th scope="col">Nombre hospital</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Hospital</th>
+            <th scope="col">Medico</th>
+            <th scope="col">Imagen</th>
             <th scope="col">Modificar</th>
             <th scope="col">Consultar</th>
             <th scope="col">Eliminar</th>
@@ -95,32 +99,22 @@
           <tr>
             <th scope="row">1</th>
             <td>Cardiología </td>
+            <td>Esta especialidad es del corazón</td>
             <td>Luz Maria</td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Ginecología</td>
-            <td>MedicBoss</td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
+            <td>Doc. Israel Muñoz</td>
+            <td><img class="img-usu" src="images/cardio.jpg"></td>
+            <td> <a href="modificarEsp.htmlbtn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></a></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>
           <tr>
             <th scope="row">3</th>
             <td>Neurología</td>
+            <td>Esta especialidad es del cerebro</td>
             <td>IMSS</td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Psicología</td>
-            <td>Médica Sur</td>
-            <td> <button class="btn btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></td>
+            <td>Doc. Ricardo Ramirez</td>
+            <td><img class="img-usu" src="images/neuo.jpg"></td>
+            <td> <a href="modificarEsp.htmln btn-primary" type="button"><i class='bx bxs-edit-alt' ></i></button></a></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-copy-alt'></i></button></td>
             <td> <button class="btn btn-primary" type="button"><i class='bx bx-trash'></i></button></td>
           </tr>

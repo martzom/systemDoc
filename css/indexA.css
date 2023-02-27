@@ -107,25 +107,25 @@ h2 {
     margin-top: 20px;/*deslizamiento hacia bajo del titulo h3*/
 }
 .img-usu {
-    height: 10%;/*Altura en pixeles*/
-    width: 10%;/*Ancho en pixeles*/
+    height: 60px;/*Altura en pixeles*/
+    width: 60px;/*Ancho en pixeles*/
 }
 
 @media screen and (max-width: 1000px) {
     .img-usu {
-        height: 10%;/*Altura en pixeles*/
-        width: 10%;/*Ancho en pixeles*/
+        height: 60px;/*Altura en pixeles*/
+        width: 60px;/*Ancho en pixeles*/
     }
 }
 @media screen and (max-width: 600px) {
     .img-usu {
-        height: 30px;/*Altura en pixeles*/
-        width: 30px;/*Ancho en pixeles*/
+        height: 60px;/*Altura en pixeles*/
+        width: 60px;/*Ancho en pixeles*/
     }
 }
 @media screen and (max-width: 300px) {
     .img-usu {
-        height:  10%;/*Altura en pixeles*/
-        width:  10%;/*Ancho en pixeles*/
+        height:  60px;/*Altura en pixeles*/
+        width:  60px;/*Ancho en pixeles*/
     }
 }
