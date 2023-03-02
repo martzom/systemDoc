@@ -9764,3 +9764,20 @@ textarea.form-control {
   .label{
     width: 100%;
     }
+    .formAd{
+    background-size: 100% auto;
+    border-style: solid;
+    border-color: #000;
+    border-radius: 8px;
+    border-color: #007bff;
+    }
+    .sdiv{
+      background-size: 100% auto;
+      border-style: solid;
+      background-color:#007bff;
+      border-radius: 8px;
+      }
+    
+      .tituloForm{
+        color: #007bff;
+            }
