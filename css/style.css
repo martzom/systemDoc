@@ -9697,10 +9697,12 @@ textarea.form-control {
 
   .titulo-noticia{
     text-align: center;
+    color: #007bff;
   }
   
   .titulo-suscripcion{
     text-align: center;
+    color: #007bff;
   }
   
   .row-sus{
@@ -9723,6 +9725,11 @@ textarea.form-control {
     text-align: center;
     width: 10%;
   }
+
+  .lab-hos{
+    text-align: justify;
+  }
+  
   
   .col{
     text-align: justify;
@@ -9781,3 +9788,4 @@ textarea.form-control {
       .tituloForm{
         color: #007bff;
             }
+
