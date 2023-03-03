@@ -75,8 +75,8 @@
         <div class="row">
           <div class="col-lg-6 offset-lg-3 p-4">
             <div class="card">
-              <div class="card-body text-center">
-                <h3>Agregar Usuario
+              <div class="card-body formAd text-center">
+                <h3 class="tituloForm">Agregar usuario
                   
                 </h3>
                 <span class="badge ">*Todos los campos son
@@ -109,13 +109,17 @@
                       </div>
                       <div class="col">
                         <input type="text" formControlName="password" class="form-control form-control-lg"
-                          placeholder="Password" /><br>
+                          placeholder="Contraseña" /><br>
+                      </div>
+                      <div class="col">
+                        <input type="text" formControlName="password" class="form-control form-control-lg"
+                          placeholder="Ingrese de nuevo la contraseña" /><br>
                       </div>
                     <label>Ingrese foto</label>
                   <input type="file" formControlName="imagen" class="form-control form-control-lg mt-3"
                     placeholder="imagen" /><br>
                   <div class="mt-3 align-items-center" >
-                    <button type="button" onclick="location.href='PruebaUsuarios.html'" class="btn btn-danger"></a>Volver</button>
+                    <button type="button" onclick="location.href='PruebaUsuarios.html'" class="btn btn-primary"></a>Volver</button>
                     <button type="button" onclick="location.href='PruebaUsuarios.html'" class="btn btn-primary"></a>Guardar</button>
 
                      
