@@ -49,7 +49,8 @@
 		  
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="indexAdm.html" class="nav-link"><span>Inicio</span></a></li>
+                <script src="https://kit.fontawesome.com/1d04a2dbec.js" crossorigin="anonymous"></script>
+	          <li class="nav-item"><a href="index.html" class="nav-link"><span>Inicio</span></a></li>
 	          <li class="nav-item"><a href="PruebaUsuarios.html" class="nav-link"><span>Usuarios</span></a></li>
 			  <li class="nav-item"><a href="PruebaEspecialidades.html" class="nav-link"><span>Especialidades</span></a></li>
 	          <li class="nav-item"><a href="PruebaHospitales.html" class="nav-link"><span>Hospitales</span></a></li>
@@ -58,6 +59,7 @@
 	          <li class="nav-item cta mr-md-2">
               <div class="input-group">
                 <div class="input-group">
+                 
               
                   <input class="form-control me-2" type="text" id="buscadorin" placeholder="Buscar">
                   <button class="btn btn-primary" id="btnbuscador" onclick="buscador()" type="button">Buscar</button>
@@ -73,14 +75,14 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 offset-lg-3 p-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <h3>Editar médico
+            <div class="card ">
+              <div class="card-body formAd text-center">
+                <h3 class="tituloForm">Modificar médico
                   
                 </h3>
                 <span class="badge ">*Todos los campos son
                   obligatorios.</span>
-                <form class="mt-4"  >
+                <form class="mt-4" >
                   <div class="row">
                     <div class="col">
                       <input type="text" formControlName="nombre" class="form-control form-control-lg" placeholder="Nombre" />
@@ -89,16 +91,26 @@
                       <input type="text" formControlName="apellido" class="form-control form-control-lg"
                         placeholder="Apellido" />
                     </div>
+                  </div><br>
+                  <div>
+                    <select class="form-control" aria-label="Default select example">
+                      <option selected>Especialidad</option>
+                      <option  value="1">Estomatología</option>
+                      <option  value="2">Neumología</option>
+                      <option  value="2">Ortopedia</option>
+                    </select>
                   </div>
                   <input type="number" formControlName="documento" class="form-control form-control-lg mt-3"
                     placeholder="Edad" /> <br>
+                    <input type="text" formControlName="documento" class="form-control form-control-lg mt-3"
+                    placeholder="Horario" /> <br>
                     <label>Ingrese foto</label>
                   <input type="file" formControlName="imagen" class="form-control form-control-lg mt-3"
                     placeholder="imagen" />
                     
                     <textarea  class="form-control form-control-lg mt-3" name="" id="" cols="10" rows="5" placeholder="Ingresa historial del medico"></textarea>
-                  <div class="mt-3 align-items-center" >
-                    <button type="button" onclick="location.href='listaMedicos.html'" class="btn btn-danger"></a>Volver</button>
+                  <div class="mt-3 align-items-center">
+                    <button type="button" onclick="location.href='listaMedicos.html'" class="btn btn-primary"></a>Volver</button>
                     <button type="button" onclick="location.href='listaMedicos.html'" class="btn btn-primary"></a>Editar</button>
 
                      
