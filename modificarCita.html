@@ -98,6 +98,27 @@
                 </div>
                   </div><br>
 
+                  <div class="row">
+                    <div class="col">
+                        <select class="form-control" aria-label="Default select example">
+                            <option selected>Tipo de cita....</option>
+                            <option  value="1">Presencial</option>
+                            <option  value="2">Domicilio</option>
+                          </select>
+                  </div>
+                  <br>
+                  <div class="col">
+                    <select class="form-control" aria-label="Default select example">
+                        <option selected>Estatus de cita....</option>
+                        <option value="1">En espera</option>
+                        <option value="2">Activo</option>
+                        <option value="3">Cancelado</option>
+                      </select>
+                  </div>
+                 </div><br>
+                 <div>
+                  <input type="text" formControlName="Domicilio" class="form-control form-control-lg mt-3" placeholder="Domicilio" /> <br>
+
                   <select class="form-control" aria-label="Default select example">
                     <option selected>Hopital....</option>
                     <option  value="1">Hospital General La Perla Nezahualcóyotl</option>
@@ -114,9 +135,8 @@
               </select>
           <br>
                  <div>
-                 <input type="text" formControlName="Domicilio" class="form-control form-control-lg mt-3" placeholder="Domicilio" /> <br>
-                 <input type="text" formControlName="Hospital" class="form-control form-control-lg mt-3" placeholder="Hospital" /> <br>
-                 <input type="text" formControlName="Especialidad" class="form-control form-control-lg mt-3" placeholder="Especialidad" /> <br>
+               
+                 
                  
                   <select class="form-control" aria-label="Default select example">
                     <option selected>Usuario</option>
