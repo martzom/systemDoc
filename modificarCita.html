@@ -25,6 +25,7 @@
         <link rel="stylesheet" href="css/icomoon.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/galery.css">
+        <link rel="stylesheet" href="css/citasForms.css">
       </head>
 <body>
     <div class="py-1 bg-black top">
@@ -75,9 +76,9 @@
         <div class="row">
           <div class="col-lg-6 offset-lg-3 p-4">
             <div class="card">
-              <div class="card-body text-center">
-                <h3>Editar cita </h3>
-                <span class="badge ">*Todos los campos obligatorios.</span>
+              <div class="card-body formModificarCita">
+                <h3 class="tituloModificarCita">Editar cita </h3>
+                <center><span class="badge ">*Todos los campos son obligatorios.</span></center>
                 <form class="mt-4">
                     <input type="text" formControlName="Nombre" class="form-control form-control-lg mt-3" placeholder="Nombre completo" /> <br>
                   <div class="row">
@@ -90,7 +91,7 @@
                   </div><br>
                   <div class="row">
                   <div class="col">
-                    <input type="date" class="form-control" placeholder="Fecha de la cita" >
+                    <input type="date" class="form-control" placeholder="Fecha de la cita" min="2023-03-03">
                 </div>
                 <div class="col">
                     <input type="time" class="form-control" placeholder="Horario de la cita" >
@@ -125,12 +126,10 @@
                     <option  value="2">Nelly</option>
                   </select>
                   <br>
-                  
-                    <button type="button" onclick="location.href='PruebaCita.html'" class="btn btn-danger"></a>Volver</button>
+                  <center>
+                    <button type="button" onclick="location.href='PruebaCita.html'" class="btn btn-primary"></a>Volver</button>
                     <button type="button" onclick="location.href='PruebaCita.html'" class="btn btn-primary"></a>Editar</button>
-
-                     
-                    </button>
+                  </center>
                   </div>
                 </form>
               </div>
